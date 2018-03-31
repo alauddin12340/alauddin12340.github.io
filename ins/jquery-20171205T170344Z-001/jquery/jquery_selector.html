@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Jquery Selctor</title>
+    <style>
+        #container {
+            width: 750px;
+            margin: 0 auto;
+        }
+
+        #box {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+            background-color: gray;
+        }
+
+        .thing {
+            width: 200px;
+            height: 200px;
+            border-top-left-radius: 100%;
+            margin-bottom: 10px;
+            background-color: green;
+        }
+
+        #click {
+            background-color: gray;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jquery Selector</h1>
+    <h2>THis is heading 2</h2>
+    <div id="wrapper">
+        <h3>This is level 3 heading</h3>
+        <p class="decendent">This is sample paragraph</p>
+    </div>
+    <div class="decendent">
+        <div id="box">
+            <p>THis p is under box</p>
+        </div>
+        <p>this is another paragraph with <em>em tag</em></p>
+    </div>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        window.jQuery || document.write("<script src='jquery-3.2.1.min.js'></script");
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

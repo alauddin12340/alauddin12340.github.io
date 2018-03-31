@@ -1,0 +1,355 @@
+<html>
+
+<head>
+	<title>Front-End-Development</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="ins/bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="ins/bootstrap-4.0.0-beta.3-dist/css/bootstrap-grid.min.css">
+
+	<link rel="stylesheet" type="text/css" href="ins/OwlCarousel2-2.2.1/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="ins/OwlCarousel2-2.2.1/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="ins/jQuery-Ajax-enabled-Month-Calendar-Plugin-with-Bootstrap-Zabuto-Calendar/jQuery-Ajax-enabled-Month-Calendar-Plugin-with-Bootstrap-Zabuto-Calendar/zabuto_calendar.min.css">
+	<link rel="stylesheet" href="/ins/jQuery-Ajax-enabled-Month-Calendar-Plugin-with-Bootstrap-Zabuto-Calendar/jQuery-Ajax-enabled-Month-Calendar-Plugin-with-Bootstrap-Zabuto-Calendar/bootstrap-custom.min.css">
+
+	<style>
+		.border {
+			background-clip: border-box;
+			border: 1px solid rgba(0, 0, 0, .125);
+			/*border-radius: .25rem;*/
+		}
+
+		.img {}
+
+		.navpositon {
+			position: relative;
+		}
+
+		/*for nav margin-top & margin-bottom */
+
+		.bg-white {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			border-radius: 0px;
+		}
+
+		.navbar-expand-lg .navbar-nav .nav-link {
+			padding-right: 1.2rem;
+			font-size: 16px;
+			padding: 10px;
+		}
+
+		.bannerposition {
+			position: absolute;
+			top: 12px;
+			text-align: center;
+			width: 72%;
+		}
+
+		.banner {
+			width: 100%;
+			height: 18%;
+		}
+
+		.logoright {
+			float: right;
+			position: relative;
+		}
+
+		.title {
+			margin-top: 22px;
+			color: white;
+			font-size: 35px;
+			font-weight: bolder;
+		}
+
+		.rightlogo {
+			width: 80px;
+			height: 90px;
+			position: relative;
+			float: right;
+			right: -75px;
+			top: -72px;
+		}
+
+		.cal-8 {
+			max-width: 63%;
+			margin-left: 28.5px;
+		}
+
+
+		@mixin clearfix() {
+			&::after {
+				display: block;
+				content: "";
+				clear: both;
+			}
+		}
+
+		.container {
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+
+		.owl-dot {
+			position: relative;
+			z-index: 1;
+		}
+
+		.footer {
+			margin: 10px 1px 1px 1px;
+			padding-top: 25px;
+			padding-bottom: 5px;
+		}
+
+		.body {
+			background-image: url(img/bg.png);
+			background-attachment: fixed;
+		}
+
+		.margintop {
+			margin-top: 15px;
+		}
+
+		.container {}
+
+	</style>
+</head>
+
+<body class="body">
+
+	<div class="container border bg-secondary text-muted ">
+		<img src="img/banner.jpg" class="banner navpositon">
+		<div class="bannerposition">
+			<img src="img/bangladesh_.png" class="navpositon" style="float: left;left: 30px;margin-top: -2px">
+			<h1 class="title pt-1">Jhenaidah Polytechnic Institute</h1>
+			<img src="img/kmpi-logo.png" class="rightlogo">
+
+		</div>
+
+		<nav class="navbar navbar-expand-lg navbar-light table-active bg-white nav-link">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item navpositon">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Teachers.html" role="button" aria-haspopup="true" aria-expanded="false">Teachers</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="civil.html">Civil</a>
+							<a class="dropdown-item" href="civil.html">Computer</a>
+							<a class="dropdown-item" href="civil.html">Electronics</a>
+							<a class="dropdown-item" href="civil.html">Environmental</a>
+							<a class="dropdown-item" href="civil.html">Non-Tech</a>
+						</div>
+					</li>
+					<li class="nav-item navpositon">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Craft-Instructor.html" role="button" aria-haspopup="true" aria-expanded="false">Craft-Instructor</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="civil.html">Electronics</a>
+							<a class="dropdown-item" href="civil.html">Computer</a>
+							<a class="dropdown-item" href="civil.html">Civil</a>
+							<a class="dropdown-item" href="civil.html">Environmental</a>
+							<a class="dropdown-item" href="civil.html">Non-Tech</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="Staff.html">Staff</a>
+					</li>
+					<li class="nav-item navpositon">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Student</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="Student.html">Students List</a>
+							<a class="dropdown-item disabled" href="#">Result</a>
+							<a class="dropdown-item disabled" href="#">Routine</a>
+							<a class="dropdown-item disabled" href="#">OLD STUDENT</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="Notice.html">Notice</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="https://drive.google.com/drive/folders/1qB-c0vgxBmGOnLHEEAW1rAktDrsJ5b_w">Job Placement</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="Contact.html">Contact</a>
+					</li>
+					<li class="nav-item navpositon">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Portal</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="Portal.html">Teacher Login</a>
+							<a class="dropdown-item" href="Portal.html">Placement Login</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+		<div class="clearfix"></div>
+
+		<div class="row margintop">
+			<div class="col-8 border cal-8 bg-white rounded">
+				<h2 class="text-center mt-3">Welcome To Jhenaidah Polytechnic Institute</h2>
+
+			</div>
+			<div class="col-4">
+
+				<div class="card text-center mb-2">
+					<div class="card-body scroll-text">
+						<h5 class="card-title">Notice Board</h5>
+						<marquee direction="up" scrollamount="2">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link active" href="#">৮ম পর্ব অনিয়মিত (২০০০ ও ২০০৫ প্রবিধান) পরীক্ষার্থীর পরীক্ষার ফি জমা প্রসঙ্গে।</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">বার্ষিক ধর্মীয় প্রতিযোগিত – 2017 খ্রিঃ</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">কোর্স সমাপনীর আবেদন আগামী ১০ নভেম্বর থেকে ২৫ নভেম্বর।</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="#">ট্যুরিজম অ্যান্ড হসপিটালিটি ম্যানেজমেন্টের ৩য় পর্বে অধ্যয়নরত ছাত্র-ছাত্রীদের ফরম ফিলাপ বিষয়ে বিজ্ঞপ্তি</a>
+								</li>
+							</ul>
+						</marquee>
+					</div>
+				</div>
+
+				<div class="card mb-2">
+					<div class="card-body ">
+						<h5 class="card-title text-center">Quick Links</h5>
+						<ul class="nav">
+							<li>
+								<a href="#">Ministry Of Education</a>
+							</li>
+							<li>
+								<a href="#">Directorate Of Technical Education</a>
+							</li>
+							<li>
+								<a href="#">Bangladesh Technical Education Board</a>
+							</li>
+							<li>
+								<a href="#">Skills and Training Enhancement Project</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card mb-2">
+					<span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 13px; line-height: 18px; white-space: pre-wrap; background-color: rgb(255, 255, 255);"><div id="calendar"></div></span>
+				</div>
+				<div class="card mb-2 text-center">
+					<div class="card-body ">
+						<h5 class="card-title ">Our Visitor</h5>
+						<p></p>
+						<p class="card-text text-info">Today: 83</p>
+						<p class="card-text text-info">Yesterday: 154</p>
+						<p class="card-text text-info">This Week: 910</p>
+						<p class="card-text text-info">This Month: 910</p>
+						<p class="card-text text-info">Total: 62252</p>
+						<p class="card-text text-info">Currently Online: 35</p>
+
+
+
+					</div>
+				</div>
+				<div class="card text-center">
+					<div class="card-body ">
+						<h5 class="card-title">Staff’s info</h5>
+						<a href="#">staff.example.gov.bd</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="card-body mt-3 footer bg-white">
+			<p style="text-align: center" class="text-muted">Copyright © 2018 Jhenaidah Polytechnic Institute. | Developeda By XYZ</p>
+		</div>
+	</div>
+
+
+	<script src="ins/Vertical-Text-Scrolling-Plugin-With-jQuery-scrollText-js/Vertical-Text-Scrolling-Plugin-With-jQuery-scrollText-js/jQuery.scrollText.js"></script>
+
+	<script src="ins/OwlCarousel2-2.2.1/OwlCarousel2-2.2.1/dist/jquery.min.js"></script>
+	<script src="ins/bootstrap-4.0.0-beta.3-dist/js/slim.min.js"></script>
+	<script src="ins/bootstrap-4.0.0-beta.3-dist/js/popper.js"></script>
+	<script src="ins/bootstrap-4.0.0-beta.3-dist/js/bootstrap.min.js"></script>
+	<script src="ins/jquery-20171205T170344Z-001/jquery/jquery-3.2.1.min.js"></script>
+
+
+	<script src="ins/OwlCarousel2-2.2.1/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+
+	<script src="ins/jQuery-Ajax-enabled-Month-Calendar-Plugin-with-Bootstrap-Zabuto-Calendar/jQuery-Ajax-enabled-Month-Calendar-Plugin-with-Bootstrap-Zabuto-Calendar/zabuto_calendar.min.js"></script>
+
+
+
+	<script>
+		var owl = $('.owl-carousel');
+		owl.owlCarousel({
+			items: 1,
+			loop: true,
+			margin: 30,
+			autoplay: true,
+			loot: true,
+			nav: false,
+			animateOut: 'fadeOut',
+			autoplayTimeout: 3000
+		});
+		/*$('.play').on('click', function() {
+			owl.trigger('play.owl.autoplay', [1000])
+		})
+		$('.stop').on('click', function() {
+			owl.trigger('stop.owl.autoplay')
+		});*/
+
+
+
+		/*$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 10,
+			nav: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 3
+				},
+				1000: {
+					items: 5
+				}
+			}
+		});*/
+
+
+		$(document).ready(function() {
+			$("#calendar").zabuto_calendar({
+				today: true,
+				show_previous: true,
+				show_next: true,
+				cell_border: true,
+				nav_icon: true, // object: prev: string, next: string
+				data: true,
+				ajax: true, // object: url: string, modal: boolean,
+				legend: true, // object array, [{type: string, label: string, classname: string}]
+			});
+		});
+
+	</script>
+
+</body>
+
+</html>
